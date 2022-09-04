@@ -458,6 +458,8 @@ h6, .h6 {
   font-size: 1rem; }
 
 p {
+
+  
   margin-top: 0;
   margin-bottom: 1rem; 
   font-family: 'DM Sans', sans-serif;
@@ -6528,7 +6530,7 @@ textarea.form-control-lg {
 
 .my-5 {
   margin-top: 3rem !important;
-  margin-bottom: 3rem !important;
+  margin-bottom: 0rem !important;
   display: inline-block;
   padding-right: 20px;
 }
@@ -9177,6 +9179,9 @@ body {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .logo {
   font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+    font-style: normal;
+
   color: #ffff;
 }
 
@@ -10248,6 +10253,9 @@ textarea {
   color: white;
   padding: 70px 0; 
   font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
   font-size: .85rem;
   font-weight: 100;
   

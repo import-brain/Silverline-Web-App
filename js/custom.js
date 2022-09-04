@@ -59,6 +59,7 @@
 
 
 		var destinationSlider = document.querySelectorAll('.destination-slider');
+		var destinationSlider1 = document.querySelectorAll('.destination-slider1');
 
 		if ( destinationSlider.length > 0 ) {
 			var desSlider = tns({
@@ -72,6 +73,32 @@
 				autoplay: true,
 				autoplayButtonOutput: false,
 				controlsContainer: "#destination-controls",
+				responsive: {
+					350: {
+						items: 2
+					},
+					500: {
+						items: 2
+					},
+					900: {
+						items: 3
+					}
+				},
+			})
+		}
+
+		if ( destinationSlider1.length > 0 ) {
+			var desSlider = tns({
+				container: ".destination-slider1",
+				items: 1,
+				axis: "horizontal",
+				swipeAngle: false,
+				speed: 500,
+				nav: true,
+				gutter: 30,
+				autoplay: true,
+				autoplayButtonOutput: false,
+				controlsContainer: "#destination-controls1",
 				responsive: {
 					350: {
 						items: 2
