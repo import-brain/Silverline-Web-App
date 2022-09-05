@@ -8246,6 +8246,12 @@ textarea.form-control-lg {
   .px-lg-5 {
     padding-right: 3rem !important;
     padding-left: 3rem !important; }
+
+    .px-lg-6 {
+      padding-right: 3rem !important;
+      padding-left: 5rem !important;
+      padding-top: 2rem r !important;
+    }
   .py-lg-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important; }
