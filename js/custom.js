@@ -101,7 +101,7 @@
 				controlsContainer: "#destination-controls1",
 				responsive: {
 					350: {
-						items: 2
+						items: 1
 					},
 					500: {
 						items: 2

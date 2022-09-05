@@ -47,6 +47,10 @@
 .list-ic li {
   position: relative;
 }
+.list-ic li a {
+  padding-left: 10px;
+}
+
 .list-ic li span {
   display: inline-block;
   font-weight: 800;
@@ -81,8 +85,8 @@
 }
 
 .counter-count .count{
-  background: rgba(255, 255, 255, 0.2);
-  border: 2px solid #ffffff;
+  background: rgba(145,140,161, 1);
+  border: 5px solid white;
   border-radius: 100%;
   color: #ffffff;
   display: flex;
@@ -93,10 +97,26 @@
   height: 180px;
   margin: 0 auto 20px;
   width: 180px;
+  font-family: 'DM sans', sans-serif;
 }
 
 .counter-count h3{
   color: #ffffff;
+  font-family: 'DM sans', sans-serif;
+  font-size: 1.5vw;
+}
+
+@media (max-width: 1200px){
+  .counter-count h3{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1000px){
+  .counter-count h3{
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 1200px){
@@ -283,10 +303,11 @@ a{
 	list-style-type: none;
 	padding: 0;
 	max-width: 500px;
+  
 }
 
 .featured-list li {
-	display: flex;
+	display: inline;
 	justify-content: flex;
 	align-items: stretch;
 	flex-direction: row;
@@ -298,6 +319,7 @@ a{
 	cursor: pointer;
 	margin: 0.6em 0;
 	min-width: 200px;
+  font-family: "DM Sans", sans-serif;
 }
 
 .featured-list li::before {
@@ -331,7 +353,7 @@ a{
 	background: var(--material-color);
 	content: " ";
 	height: 100%;
-	width: 100%;
+	width: 110%;
 	top: 0;
 	left: 0;
 	z-index: -1;
@@ -6525,15 +6547,32 @@ textarea.form-control-lg {
   margin-bottom: 1rem !important; }
 
 .my-4 {
-  margin-top: 1.5rem !important;
-  margin-bottom: 1.5rem !important; }
-
-.my-5 {
-  margin-top: 3rem !important;
-  margin-bottom: 0rem !important;
+  margin-top: 0rem !important;
+  margin-bottom: 1.5rem !important; 
   display: inline-block;
   padding-right: 20px;
 }
+
+@media (max-width: 450px) {
+  .my-4 {
+    padding-right: 70px;
+  }
+  
+}
+.my-5 {
+  margin-top: 3rem !important;
+  margin-bottom: 1.5rem !important;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.my-6 {
+  margin-top: 0rem !important;
+  margin-bottom: 1.5rem !important;
+  display: inline-block;
+  padding-right: 0px;
+}
+
 
 
 .my-auto {
@@ -6749,6 +6788,9 @@ textarea.form-control-lg {
 
 .pb-5 {
   padding-bottom: 3rem !important; }
+
+.pb-7 {
+    padding-bottom: 5rem !important; }
 
 .ps-0 {
   padding-left: 0 !important; }
@@ -9366,8 +9408,10 @@ textarea {
           -ms-transform: translateY(-50%);
           transform: translateY(-50%);
           font-family: 'icomoon'; }
+
+          
       .site-nav .site-navigation .site-menu .has-children .dropdown {
-        visibility: hidden;
+        visibility: visible;
         opacity: 0;
         top: 100%;
         z-index: 999;
@@ -9472,12 +9516,13 @@ textarea {
       transform: rotate(-45deg); }
 
 .site-mobile-menu {
+  
   width: 300px;
   position: fixed;
   right: 0;
   z-index: 2000;
   padding-top: 20px;
-  background: #fff;
+  background: #6F6B7C;
   height: calc(100vh);
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
@@ -9485,6 +9530,8 @@ textarea {
   -webkit-transition: 0.8s all cubic-bezier(0.23, 1, 0.32, 1);
   -o-transition: 0.8s all cubic-bezier(0.23, 1, 0.32, 1);
   transition: 0.8s all cubic-bezier(0.23, 1, 0.32, 1); }
+
+
   .offcanvas-menu .site-mobile-menu {
     -webkit-box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
     box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
@@ -9536,14 +9583,15 @@ textarea {
       padding: 5px 20px;
       display: block;
       position: relative;
-      color: #000; }
+      color: #D7D6DA; }
+
       .site-mobile-menu .site-nav-wrap a:hover {
         color: #453773; }
     .site-mobile-menu .site-nav-wrap li {
       position: relative;
       display: block; }
       .site-mobile-menu .site-nav-wrap li.active > a {
-        color: #453773; }
+        color: white; }
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
       position: absolute;
       right: 0px;
@@ -9724,7 +9772,7 @@ textarea {
     top: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .6);
     z-index: 1; }
   .hero .heading {
     font-size: 60px;
@@ -9784,6 +9832,11 @@ textarea {
   padding-top: 7rem;
   background: #181A1B;
   padding-bottom: 7rem; }
+
+  .sectionWO {
+  
+    background: #181A1B;
+    padding-bottom: 7rem; }
   .section .subheading {
     font-size: 18px;
     text-transform: uppercase;
