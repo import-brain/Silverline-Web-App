@@ -10382,3 +10382,19 @@ textarea {
       .site-footer .social li a:hover {
         background: #5271FF;
         color: #fff; }
+      @media (max-width: 1200px) {
+        .social-top {
+          display: none;
+          visibility: hidden;
+          position: absolute;
+          top: -100px;
+        }
+      }
+        
+
+        .social-top a:hover {
+          border-radius: 30px;
+          background: #5270FF;
+        }
+     
+    
