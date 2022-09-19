@@ -948,7 +948,7 @@ height: auto; }
     height: 48em;
   }
   .media-size2 {
-    height: 20em;
+    height: 80em;
   }
 
   }
@@ -9369,7 +9369,7 @@ textarea {
         display: inline-block;
         text-decoration: none !important;
         color: rgba(255, 255, 255, 0.7); }
-        .site-nav .site-navigation .site-menu > li.non > a:after {
+        .site-nav .site-navigation .site-menu > li > a:after {
           color: #fff; 
           display:block;
           content: '';
