@@ -957,7 +957,7 @@ height: auto; }
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
     max-width: 1320px; }
   .media-size0 {
-    height: 80em;
+    height: 70em;
   }
   .media-size1 {
     height: 43em;
